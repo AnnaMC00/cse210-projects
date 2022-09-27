@@ -33,12 +33,14 @@ namespace Unit02.Game
         /// </summary>
         public void StartGame()
         {
+            Console.WriteLine("\nWelcome to the Dice game!\n\nRules are simple:\nYou will roll 5 dies.. each 1 is 100 points,\neach 5 is 50 points..but you will lose if you don't roll any 1 or 5.. \nso..");
             while (_isPlaying)
             {
                 GetInputs();
                 DoUpdates();
                 DoOutputs();
             }
+            Console.WriteLine("\nThank you for playing!/n");
         }
 
         /// <summary>
@@ -46,9 +48,21 @@ namespace Unit02.Game
         /// </summary>
         public void GetInputs()
         {
-            Console.Write("Roll dice? [y/n] ");
-            string rollDice = Console.ReadLine();
-            _isPlaying = (rollDice == "y");
+            bool correctAnswer = false;
+            do 
+            {
+                Console.Write("Roll dice? [y/n] ");
+                string rollDice = Console.ReadLine();
+                if (rollDice == "y" || rollDice == "n")
+                {
+                    _isPlaying = (rollDice == "y");
+                    correctAnswer = true;
+                }
+                else
+                {
+                    Console.WriteLine("Please answer with the options given");
+                }
+            } while (!correctAnswer);
         }
 
         /// <summary>
