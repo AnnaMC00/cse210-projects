@@ -12,7 +12,7 @@ namespace Unit03.Game
     /// </summary>
     public class Hider
     {
-        public int _location = 0;
+        private int _location = 0;
         private List<int> _distance = new List<int>();
 
         /// <summary>
