@@ -62,5 +62,9 @@ namespace Unit04.Game.Casting
             int y = this._y * factor;
             return new Point(x, y);
         }
+
+        // El method Add era para generar la caida de los items. Si sumaba la posicion actual mas la velocidad lo lograba.
+        // Aunque aun me pregunto como hacer que cuando se toquen los elementos no tengan que sobreponerse ne el msismo punto
+        // sino en el mismo espacio.
     }
 }

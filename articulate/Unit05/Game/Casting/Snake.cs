@@ -58,11 +58,14 @@ namespace Unit05.Game.Casting
                 Actor tail = _segments.Last<Actor>();
                 Point velocity = tail.GetVelocity();
                 Point offset = velocity.Reverse();
-                Point position = tail.GetPosition().Add(offset);
-
+                Point position = tail.GetPosition().Add(offset); // crea una nueva posicion con la posicion actual y la velocidad,
+                                                                // la velocidad se tiene que invertir para conocer la direccion en
+                                                                // la que esta yendo el snake y agregar un segmento en la direccion
+                                                                // contraria, no que vaya en la direccion contraria, sino que su posicion
+                                                                // sea en la direccion contraria.
                 Actor segment = new Actor();
                 segment.SetPosition(position);
-                segment.SetVelocity(velocity);
+                segment.SetVelocity(velocity); // la direccion se mantiene porque la velocidad no cambia.
                 segment.SetText("#");
                 segment.SetColor(Constants.GREEN);
                 _segments.Add(segment);
@@ -82,7 +85,9 @@ namespace Unit05.Game.Casting
                 Actor trailing = _segments[i];
                 Actor previous = _segments[i - 1];
                 Point velocity = previous.GetVelocity();
-                trailing.SetVelocity(velocity);
+                trailing.SetVelocity(velocity); // actualiza la velocidad del segmento siguiendo la velocidad del segmento adelante.
+                                                // entonces si la cabeza giro, el ultimo segmento seguira derecho hasta que el segmento
+                                                // antes que el haya girado, entonces recien adquirida su velocidad (direccion).
             }
         }
 
@@ -106,8 +111,8 @@ namespace Unit05.Game.Casting
             for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
             {
                 Point position = new Point(x - i * Constants.CELL_SIZE, y);
-                Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
-                string text = i == 0 ? "8" : "#";
+                Point velocity = new Point(1 * Constants.CELL_SIZE, 0); // velocity indica la direccion y la velocidad.
+                string text = i == 0 ? "8" : "#";                       // en este caso se movera cada 15 pix hacia la derecha para empezar
                 Color color = i == 0 ? Constants.YELLOW : Constants.GREEN;
 
                 Actor segment = new Actor();

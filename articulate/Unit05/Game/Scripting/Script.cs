@@ -59,7 +59,7 @@ namespace Unit05.Game.Scripting
         /// </summary>
         /// <param name="group">The group name.</param>
         /// <param name="action">The action to remove.</param>
-        public void RemoveActor(string group, Action action)
+        public void RemoveAction(string group, Action action)
         {
             if (_actions.ContainsKey(group))
             {

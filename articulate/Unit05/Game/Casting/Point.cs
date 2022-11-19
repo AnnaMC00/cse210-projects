@@ -28,7 +28,7 @@ namespace Unit05.Game.Casting
         /// </summary>
         /// <param name="other">The point to add.</param>
         /// <returns>The sum as a new Point.</returns>
-        public Point Add(Point other)
+        public Point Add(Point other) // useful para utilizarlo con la velocidad
         {
             int x = this._x + other.GetX();
             int y = this._y + other.GetY();

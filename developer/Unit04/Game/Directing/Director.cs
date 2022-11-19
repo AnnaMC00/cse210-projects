@@ -96,7 +96,9 @@ namespace Unit04.Game.Directing
                     cast.RemoveActor("rocksAndDiamonds", actor);
                 }
 
-                actor.SetPosition(actor.ItemFall(actor.GetPosition()));
+                actor.SetPosition(actor.ItemFall(actor.GetPosition())); // con haber agregado diferentes velocities y usar el method Add
+                                                                        // habria solucionado el problema
+                                                                        // el punto actual mas x=0 e y=15 repetidamente hubiera hecho los items caer
             }
         }
 

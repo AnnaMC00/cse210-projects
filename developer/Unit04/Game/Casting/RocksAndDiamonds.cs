@@ -55,7 +55,7 @@ namespace Unit04.Game.Casting
 
         public Point StartPosition(int maxX, int maxY, int cellSize)
         {
-            int x = random.Next(maxX);
+            int x = random.Next(maxX); // aca podria haberse usado columnas, la manera en la que lo hize da puntos que no se mostraran en la pantalla
             Point position = new Point(x, 0);
             position = position.Scale(cellSize);
 
