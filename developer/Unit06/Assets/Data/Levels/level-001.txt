@@ -1,0 +1,14 @@
+w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w
+w, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, w
+w, o, o,ev, o, o, o, o, o, o, o,eh, o, o, o, o, o, o,ev, o, o, w
+w, o, o, o,eq,eq,eq, o, o, o, o, o, o, o, o,eq,eq,eq, o, o, o, w
+w, o, o, o,eq, w,eq, o, o, o,eq,eq, o, o, o,eq, w,eq, o, o, o, w
+w, o, o, o,eq,eq,eq, o, o, o,eq,eq, o, o, o,eq,eq,eq, o, o, o, w
+w, o, o, o, o, o, o,ev, o, o,eq,eq, o, o, o, o, o, o, o, o, o, w
+w, o, o, o, o, o, o, o, o, o,eq,eq, o, o,ev, o, o, o, o, o, o, w
+w, o, o, o,eq,eq,eq, o, o, o,eq,eq, o, o, o,eq,eq,eq, o, o, o, w
+w, o, o, o,eq, w,eq, o, o, o,eq,eq, o, o, o,eq, w,eq, o, o, o, w
+w, o, o, o,eq,eq,eq, o, o, o, o, o, o, o, o,eq,eq,eq, o, o, o, w
+w,ev, o, o, o, o, o, o, o, o,eh, o, o, o, o, o, o, o, o, o,ev, w
+w, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, o, w
+w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w
